@@ -1,53 +1,37 @@
 /*body*/
 body {
-    background-color: #121212;
-    color: #f1f1f1;
-    margin: 0;
-    padding: 0;
+    background-color:#121212;
+    color:#f1f1f1;
+    margin:0;
+    padding:0;
 }
 .top-section {
-    background-color: #0A1A2F; 
-    height: 55px; 
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
+    background-color:#0A1A2F; 
+    min-height:55px;
+    padding:10px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    font-weight:bold;
 }
 .main-section {
-    background-color: #1E3A5F;
-    min-height: 90px;
-    padding: 40px;
-    color: white;
-    text-align: center;
-}
-.bottom-section {
-    background-color: #0A1A2F;
-    height: 30px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    font-size: 14px;
-}
-.bottom-section a {
-    color: #9CC3FF;
-    text-decoration: none;
-}
-.bottom-section a:hover {
-    text-decoration: underline;
+    background-color:#1E3A5F;
+    min-height:90px;
+    padding:40px;
+    text-align:center;
 }
 .navbar-footer {
-    background-color: #0A1A2F;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-    color: white;
+    background-color:#0A1A2F;
+    min-height: 45px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap: 10px;
+    padding: 5px 20px;
+    text-align:center;
 }
 .footer-left {
     font-weight: bold;
@@ -70,34 +54,6 @@ body {
 .footer-menu a:hover {
     color: white;
 }
-/*zona scuole*/
-.scuole {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    background-color: #1E3A5F;
-    border: 2px solid #554f4f91;
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: 10px;
-    overflow: hidden;
-}
-.scuole-img {
-    width: 60%;
-    height: 100%;
-    border-radius: 7px;
-    object-fit: cover;
-}
-.scuole-testo {
-    width: 40%;
-    padding-left: 15px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 /*Dati*/
 /*tabella rischio*/
 .formula {
@@ -146,21 +102,18 @@ table.rischio td {
     align-items: center;
     gap: 10px;
 }
-
 /*tabella infortuni*/
 table.infortuni {
     width: 40%;
     border-collapse: collapse;
     margin: 12px 0;
 }
-
 table.infortuni th,
 table.infortuni td {
     border: 1px solid #808080;
     padding: 8px;
     text-align: center;
 }
-
 /*FAQ*/
 .faq-item {
     border: 1px solid #ccc;
@@ -170,21 +123,18 @@ table.infortuni td {
     cursor: pointer;
     background: #141414;
 }
-
 .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
 }
-
 .arrow {
-    width: 20%;          
-    height: 20px;
+    width: 20%;
+    min-height: 20px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
-
 .faq-answer {
     display: none;
     margin-top: 10px;
@@ -192,11 +142,9 @@ table.infortuni td {
     border-top: 1px solid #444;
     line-height: 1.4;
 }
-
 .faq-item.open .faq-answer {
     display: block;
 }
-
 .faq-item.open .arrow {
     transform: rotate(180deg);
 }
