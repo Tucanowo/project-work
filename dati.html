@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adattato per telefoni -->
+    <title>Sicurezza sul lavoro e calcolo del fattore di rischio</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body> 
+<header class="top-section">
+    <h1>Sicurezza sul lavoro e calcolo del fattore di rischio</h1>
+</header>
+<main class="main-section">
+    <h2>Dati</h2>
+    <p>Analisi dei dati sugli infortuni sul lavoro e loro impatto sul fattore di rischio</p>
+</main>
+<nav class="navbar-footer">
+    <div class="footer-left">© 2026 Project Work</div>
+    <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="decreti.html">Decreti</a></li>
+        <li><a href="dati.html">Dati</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+</nav>
+
+<h1>Calcolo numerico del fattore di rischio e analisi dei dati</h1>
+<h4>La valutazione del rischio serve a capire quanto un’attività, un’attrezzatura o un ambiente di lavoro possono essere pericolosi. Per farlo si usa un modello numerico semplice, che permette di trasformare il rischio (R)in un valore da 1 a 16.
+Questo valore si ottiene moltiplicando la probabilità che un evento dannoso accada (P) per il danno che potrebbe causare (D).</h4>
+<p class="formula">R = P × D</p>
+<h4>Probabilità e danno vengono valutati su una scala da 1 a 4. Una volta calcolato il valore R, è possibile capire se il rischio è basso, medio, alto o molto alto e quali misure di sicurezza sono necessarie.
+Questo modello non è obbligatorio, ma è uno dei più utilizzati perché è semplice, chiaro e si ispira ai criteri operativi comunemente adottati nelle aziende.</h4>
+
+<!--tabella dei livelli di rischio-->
+<p>Livelli di rischio finale</p>
+<table class="rischio">
+  <tr><th>Livello</th><th>Valore</th><th>Spiegazione</th></tr>
+  <tr><td>Basso</td><td>1–2</td><td>Rischio basso e danno lieve</td></tr>
+  <tr><td>Medio</td><td>3–6</td><td>Rischio moderato, possibile danno non letale</td></tr>
+  <tr><td>Alto</td><td>8–9</td><td>Rischio elevato, danno grave</td></tr>
+  <tr><td>Molto alto</td><td>12–16</td><td>Rischio inaccettabile, luogo di lavoro non sicuro</td></tr>
+</table>
+
+<div class="calcolo-rischio">
+    <h3>Calcolo del Rischio</h3>
+    <div class="slider">
+    <label>(P): <span id="valoreP">1</span></label>
+    <input type="range" id="sliderP" min="1" max="4" value="1">
+    <p id="descrizioneP"></p>
+    </div>
+    <div class="slider">
+    <label>(D): <span id="valoreD">1</span></label>
+    <input type="range" id="sliderD" min="1" max="4" value="1">
+    <p id="descrizioneD"></p>
+    </div>
+    <div class="risultato-rischio">
+        <p>Prodotto: <strong id="valoreRischio">1</strong></p>
+        <p id="descrizioneRischio"></p>
+    </div>
+</div>
+
+
+<h2>Le morti sul lavoro</h2>
+<p>Nonostante l’impegno delle aziende e l’applicazione delle misure di sicurezza, gli infortuni gravi possono comunque verificarsi. Nei casi più estremi, questi eventi hanno esiti mortali e rappresentano l’indicatore più critico dello stato della sicurezza nei luoghi di lavoro.<br>
+Monitorare l’andamento degli infortuni mortali negli anni permette di capire quanto il tema della prevenzione sia centrale e quanto sia necessario mantenere alta l’attenzione sulla gestione del rischio. La tabella seguente mostra il numero di morti sul lavoro registrate annualmente.</p>
+
+<!--tabella morti sul lavoro 2018-2025-->
+<p>Denunce di infortunio con esito mortale sul lavoro dal 2018 al 2025 (in occasione di lavoro + in itinere):</p>
+<table class="infortuni">
+  <tr><th>Anno</th><th>Morti</th></tr>
+  <tr><td>2018</td><td>1133</td></tr>
+  <tr><td>2019</td><td>1089</td></tr>
+  <tr><td>2020</td><td>1270</td></tr>
+  <tr><td>2021</td><td>1221</td></tr>
+  <tr><td>2022</td><td>1090</td></tr>
+  <tr><td>2023</td><td>1041</td></tr>
+  <tr><td>2024</td><td>1090</td></tr>
+  <tr><td>2025</td><td>1093</td></tr>
+</table>
+<p>Fonte: INAIL – Open Data Infortuni sul lavoro</p>
+
+<script src="script.js"></script>
+</body>
+</html>

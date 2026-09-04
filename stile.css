@@ -1,0 +1,202 @@
+/*body*/
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+.top-section {
+    background-color: #0A1A2F; 
+    height: 55px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.main-section {
+    background-color: #1E3A5F;
+    min-height: 90px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+.bottom-section {
+    background-color: #0A1A2F;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+.bottom-section a {
+    color: #9CC3FF;
+    text-decoration: none;
+}
+.bottom-section a:hover {
+    text-decoration: underline;
+}
+.navbar-footer {
+    background-color: #0A1A2F;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    color: white;
+}
+.footer-left {
+    font-weight: bold;
+}
+.footer-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu li {
+    position: relative;
+}
+.footer-menu a {
+    color: #9CC3FF;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer-menu a:hover {
+    color: white;
+}
+/*zona scuole*/
+.scuole {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #1E3A5F;
+    border: 2px solid #554f4f91;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+.scuole-img {
+    width: 60%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.scuole-testo {
+    width: 40%;
+    padding-left: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Dati*/
+/*tabella rischio*/
+.formula {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-20%);
+}
+
+table.rischio {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 14px 0;
+}
+
+table.rischio th,
+table.rischio td {
+    border: 1px solid #808080;
+    padding: 8px;
+    text-align: center;
+}
+/* calcolo rischio */
+.calcolo-rischio {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    background: #2a2a2a;
+    width: 300px;
+}
+.calcolo-rischio label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.risultato-rischio {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #1b1b1b;
+    text-align: center;
+    font-size: 18px;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*tabella infortuni*/
+table.infortuni {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+table.infortuni th,
+table.infortuni td {
+    border: 1px solid #808080;
+    padding: 8px;
+    text-align: center;
+}
+
+/*FAQ*/
+.faq-item {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #141414;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.arrow {
+    width: 20%;          
+    height: 20px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    line-height: 1.4;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .arrow {
+    transform: rotate(180deg);
+}
