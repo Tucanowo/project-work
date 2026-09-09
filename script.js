@@ -1,3 +1,15 @@
+//Documentazione
+// QR code
+const qrContainer = document.getElementById("qr-pdf");
+if (qrContainer) {
+    new QRCode(qrContainer, {
+        text: "https://tucanowo.github.io/project-work/pdfesplicativo.pdf",
+        width: 256,
+        height: 256,
+        correctLevel: QRCode.CorrectLevel.H
+    });
+}
+
 // DATI
 function aggiornaRischio() {
     const p = parseInt(document.getElementById("sliderP").value);
@@ -25,7 +37,6 @@ function aggiornaRischio() {
     else testoR = "Rischio Altissimo.";
     document.getElementById("descrizioneRischio").textContent = testoR;
 }
-// Risolto il bug della pagina FAQ
 const sliderP = document.getElementById("sliderP");
 const sliderD = document.getElementById("sliderD"); 
 if (sliderP && sliderD) { 
@@ -34,7 +45,7 @@ if (sliderP && sliderD) {
     aggiornaRischio();
 }
 // FAQ
-document.querySelectorAll('.faq-item').forEach(item => {
+document.querySelectorAll('.faq-box').forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('open');
     });
