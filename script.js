@@ -1,5 +1,3 @@
-//Documentazione
-// QR code
 const qrContainer = document.getElementById("qr-pdf");
 if (qrContainer) {
     new QRCode(qrContainer, {
@@ -9,8 +7,6 @@ if (qrContainer) {
         correctLevel: QRCode.CorrectLevel.H
     });
 }
-
-// DATI
 function aggiornaRischio() {
     const p = parseInt(document.getElementById("sliderP").value);
     const d = parseInt(document.getElementById("sliderD").value);
@@ -44,7 +40,6 @@ if (sliderP && sliderD) {
     sliderD.addEventListener("input", aggiornaRischio);
     aggiornaRischio();
 }
-// FAQ
 document.querySelectorAll('.faq-box').forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('open');
