@@ -1,7 +1,7 @@
 const qrContainer = document.getElementById("qr-pdf");
 if (qrContainer) {
     new QRCode(qrContainer, {
-        text: "https://tucanowo.github.io/project-work/pdfesplicativo.pdf",
+        text: "https://tucanowo.github.io/project-work/pdf_esplicativo.pdf",
         width: 256,
         height: 256,
         correctLevel: QRCode.CorrectLevel.H
