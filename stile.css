@@ -7,6 +7,7 @@ body {
 .top-section {
     background-color:#0A1A2F; 
     min-height:55px;
+    width: 100%;
     padding:10px;
     display:flex;
     align-items:center;
@@ -17,12 +18,14 @@ body {
 .main-section {
     background-color:#1E3A5F;
     min-height:90px;
+    width: 100%;
     padding:30px;
     text-align:center;
 }
 .navbar {
     background-color:#0A1A2F;
     min-height: 45px;
+    width: 100%;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -63,8 +66,8 @@ body {
     width: 100%;
 }
 .box h3 {
-    margin-top: 0;
     font-size: 22px;
+    margin-top: 0;
 }
 .box h4 {
     line-height: 1.3;
